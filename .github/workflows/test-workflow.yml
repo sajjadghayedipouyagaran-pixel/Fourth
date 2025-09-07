@@ -1,4 +1,4 @@
-name: Run Tests on GitHub Actions
+name: My Workflow
 
 on:
   push:
@@ -12,15 +12,6 @@ jobs:
     steps:
       - name: Checkout code
         uses: actions/checkout@v4
-        
-      - name: Setup Node.js
-        uses: actions/setup-node@v4
-        with:
-          node-version: 'lts/*'
-      
-      - name: Install Dependencies
-        run: npm install
-        
-      - name: Run Tests
-        run: npm test
 
+      - name: نمایش فایل‌ها
+        run: ls -la
